@@ -1,8 +1,9 @@
-package com.bullish.marketdata.feed;
+package com.marketdata.feed;
 
 public class CurrentLowHigh {
 
     public static CurrentLowHigh EMPTY = new CurrentLowHigh(0, Double.MAX_VALUE, Double.MIN_VALUE);
+
     private double currentPrice;
     private double lowPrice;
     private double highPrice;

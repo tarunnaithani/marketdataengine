@@ -1,8 +1,8 @@
-package com.bullish.marketdata.common;
+package com.marketdata.common;
 
 public class TickData {
-    private String  symbol;
-    private double price;
+    private final String symbol;
+    private final double price;
 
     public TickData(String symbol, double price) {
         this.symbol = symbol;

@@ -1,23 +1,23 @@
-package com.bullish.marketdata;
+package com.marketdata;
 
 import java.util.concurrent.atomic.AtomicBoolean;
 
 public abstract class LifeCycle extends Thread implements ILifeCycle{
 
-    private AtomicBoolean stop;
+    private final AtomicBoolean stop;
 
     public LifeCycle() {
         this.stop = new AtomicBoolean(false);
     }
 
     @Override
-    public void startCycle() {
+    public void startProcess() {
         this.stop.set(false);
         this.start();
     }
 
     @Override
-    public void stopCycle() {
+    public void stopProcess() {
         this.stop.set(true);
     }
 

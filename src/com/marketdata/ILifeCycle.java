@@ -1,8 +1,8 @@
-package com.bullish.marketdata;
+package com.marketdata;
 
 public interface ILifeCycle {
-    void startCycle();
-    void stopCycle();
+    void startProcess();
+    void stopProcess();
     void process();
     boolean isStopped();
 }
