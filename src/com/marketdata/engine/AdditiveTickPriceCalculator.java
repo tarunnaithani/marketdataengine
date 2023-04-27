@@ -1,9 +1,9 @@
 package com.marketdata.engine;
 
-public class StaticTickPriceCalculator implements ITickPriceCalculator {
+public class AdditiveTickPriceCalculator implements ITickPriceCalculator {
     private final double tickSize;
 
-    public StaticTickPriceCalculator(double tickSize) {
+    public AdditiveTickPriceCalculator(double tickSize) {
         this.tickSize = tickSize;
     }
 

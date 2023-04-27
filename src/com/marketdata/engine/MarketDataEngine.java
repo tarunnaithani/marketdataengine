@@ -15,7 +15,7 @@ public class MarketDataEngine extends LifeCycle implements IMarketDataEngine{
 
     public MarketDataEngine(String symbol, double initialPrice, double tickSize, BlockingQueue<TickData> feederQueue, int maxPublishCount)
     {
-        this(symbol, initialPrice, feederQueue, maxPublishCount, new StaticTickPriceCalculator(tickSize));
+        this(symbol, initialPrice, feederQueue, maxPublishCount, new AdditiveTickPriceCalculator(tickSize));
     }
 
     public MarketDataEngine(String symbol, double initialPrice, BlockingQueue<TickData> publisherQueue, int maxPublishCount, ITickPriceCalculator tickPriceCalculator)
